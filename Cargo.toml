@@ -3,14 +3,19 @@ name = "boids"
 version = "0.1.0"
 authors = ["Simon Bourque <7109056+simon-bourque@users.noreply.github.com>"]
 edition = "2018"
+build = "build.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+gl_generator = "*"
 
 [dependencies]
 glfw = "*"
 glutin = "*"
 gl = "*"
 libc = "*"
+rand = "*"
 
 [[bin]]
 name = "boids"
